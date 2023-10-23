@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+//document.addEventListener('DOMContentLoaded', () => {
     const productListContainer = document.getElementById('jackets-details');
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     displayProducts();
-});
+//});
 
 
 
@@ -60,29 +60,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-//const productContainer = document.querySelector(".jackets-details");
+//const productContainer = document.querySelector(".all-jackets");
 
 //const url = "https://api.noroff.dev/api/v1/rainy-days";
 
 
 //async function getProduct() {
     
-    //try {
+   // try {
         //const response = await fetch(url);
-        //const json = await response.json();
+        //const results = await response.json();
 
-       // console.log(json);
     
         //productContainer.innerHTML = "";
 
         //const jackets = json.results;
 
         //jackets.forEach(function(jacket) {
-            //productContainer.innerHTML += `<a href=details.html?id=${jackets.id} class="card">
-                                 //<div class="image"style=background-image: url(${jackets.background_image})"></div>
-                                 //<div class="details">
-                                     //<h4 class="name"> ${jackets.name}</h4>
+           // productContainer.innerHTML += `<a href=details.html?id=${jackets.id} class="card">
+                                // <div class="image"style=background-image: url(${jackets.background_image})"></div>
+                                // <div class="details">
+                                    // <h4 class="name"> ${jackets.name}</h4>
                                  //</div>`;
 
 
@@ -90,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
             
     //}    
-    //catch(error) {
+   // catch(error) {
         //console.log(error)
         //productContainer.innerHTML = message("error", error);
     //}
@@ -98,3 +96,59 @@ document.addEventListener('DOMContentLoaded', () => {
 //}
 
 //getProduct();
+//let keyword because the value of html will change inside the loop
+//let html = "";
+
+//for (let i = 0; i < jacket.length; i++) {
+     //html = html + "<h1>" + jackets[i].type + "</h1>";
+
+    // html = html + `<h1>${jackets[i].type}</h1>`;
+
+    //div class jackets, er div'en du kan style i css
+     //html += `<div class="jackets">
+                //<h1>${jackets[i].type}</h1>
+                //<p>info: ${jakets[i].info}</p>
+
+              //</div>
+              //`;
+
+    //console.log(html);
+
+
+//CSSContainerRule.innerHTML = html;
+
+
+const url = "https://api.noroff.dev/api/v1/rainy-days";
+
+const productContainer = document.querySelector(".show-jackets");
+
+async function getProduct() {
+    
+     
+         const response = await fetch(url);
+
+         const results = await response.json();
+  
+         console.log(results);
+
+
+        productContainer.innerHTML = "";
+
+         for (let i = 0; i < product.length; i++) {
+            console.log(product[i].text);
+
+             if (i === 10) {
+               break;
+             }
+
+             productContainer.innerHTML += `<div class="showjackets">${product[i].text}</div>`;
+         }
+
+}   
+
+ catch (error) {
+    console.log(error);
+    productContainer.innerHTML = alert("error", error);
+}
+
+getProduct();
