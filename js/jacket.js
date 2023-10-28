@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadingIndicator.style.display = 'none';
                     productDetails.style.display = 'block';
 
-                    const productImage = document.getElementById('');
-                    const productTitle = document.getElementById('');
-                    const productPrice = document.getElementById('');
-                    const productDescription = document.getElementById('');
+                    const productImage = document.getElementById('product-image');
+                    const productTitle = document.getElementById('product-title');
+                    const productPrice = document.getElementById('product-price');
+                    const productDescription = document.getElementById('product-description');
 
                     productImage.src = result.image;
                     productImage.alt = result.title;
