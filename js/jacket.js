@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
 
             const loadingIndicator = document.querySelector('.loading-indicator');
-            const productDetails = document.querySelector('.product-image image-specification');
+            const productDetails = document.querySelector('.product-description');
 
             for (let i = 0; i < 5; i++) {
                 setTimeout(() => {
                     loadingIndicator.style.display = 'none';
                     productDetails.style.display = 'block';
 
-                    const productImage = document.getElementById('product-image');
-                    const productTitle = document.getElementById('product-title');
-                    const productPrice = document.getElementById('product-price');
-                    const productDescription = document.getElementById('product-description');
+                    const productImage = document.getElementById('');
+                    const productTitle = document.getElementById('');
+                    const productPrice = document.getElementById('');
+                    const productDescription = document.getElementById('');
 
                     productImage.src = result.image;
                     productImage.alt = result.title;
