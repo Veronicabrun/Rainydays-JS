@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',() => {
     const productContainer = document.querySelector('.products-container');
-    //const loadingIndicator = document.getElementById('loading-indicator');
+    const loadingIndicator = document.getElementById('loading-indicator');
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
 
 async function getProduct() {
@@ -11,8 +11,6 @@ async function getProduct() {
         console.log(results);
 
         productContainer.innerHTML = '';
-
-        //loadingIndicator.style.display = 'none';
 
         for (let i = 0; i < results.length; i++) {
             if (i === 5) {
@@ -27,6 +25,9 @@ async function getProduct() {
             <p class="product__price">${results[i].price}</p>
             </div>`;
         }
+
+          loadingIndicator.style.display = 'none';
+
     } catch (error) {
         console.log(error);
         productContainer.innerHTML = message('error', error);
