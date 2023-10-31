@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-
     const apiUrl = `https://api.noroff.dev/api/v1/rainy-days/${productId}`;
 
     async function getProductDetails() {
@@ -44,4 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-   //const productContainerJacket = document.querySelector('.products-container-jacket');
+   ///const productContainerJacket = document.querySelector('.products-container-jacket');
+
+
+
+  

@@ -29,8 +29,13 @@ async function getProduct() {
           loadingIndicator.style.display = 'none';
 
     } catch (error) {
-        console.log(error);
-        productContainer.innerHTML = message('error', error);
+        console.log("error");
+        productContainer.innerHTML = displayError("A error occurred");
+
+        //catch (error) {
+            //console.log(error);
+            //productContainer.innerHTML = message('error', error);
+        //}
     }
 }
 
