@@ -189,9 +189,12 @@ span {
 }
 
 .products-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     gap: 30px;
     padding: 20px 30px;

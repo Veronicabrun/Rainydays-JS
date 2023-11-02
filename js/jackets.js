@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',() => {
     const productContainer = document.querySelector('.products-container');
-    const loadingIndicator = document.getElementById('loading-indicator');
+    const loadingIndicator = document.querySelector('.loading-indicator');
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
 
 async function getProduct() {
@@ -13,7 +13,7 @@ async function getProduct() {
         productContainer.innerHTML = '';
 
         for (let i = 0; i < results.length; i++) {
-            if (i === 5) {
+            if (i === 16) {
                 break;
             }
 
@@ -22,6 +22,14 @@ async function getProduct() {
             <img class="product__image" src="${results[i].image}" alt="${results[i].title}">
             </a>
             <h2>${results[i].title}</h2>
+
+            <p class="gender">${results[i].gender}</p>
+
+
+            <p class="product__description">${results[i].description}</p>
+
+            <p class="sizes">${results[i].sizes}</p>
+            
             <p class="product__price">${results[i].price}</p>
             </div>`;
         }
@@ -31,7 +39,7 @@ async function getProduct() {
     } catch (error) {
         console.log("error");
         productContainer.innerHTML = displayError("A error occurred");
-
+     
         //catch (error) {
             //console.log(error);
             //productContainer.innerHTML = message('error', error);
