@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded',() => {
-    const productContainer = document.querySelector('.products-container');
+    const productContainerHome = document.querySelector('.products-container-home');
     const loadingIndicator = document.querySelector('.loading-indicator');
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
 
-async function getProduct() {
+async function getProductHome() {
     try {
         const response = await fetch(apiUrl);
         const results = await response.json();
 
         console.log(results);
 
-        productContainer.innerHTML = '';
+        productContainerHome.innerHTML = '';
 
         for (let i = 0; i < results.length; i++) {
-            if (i === 16) {
+            if (i === 5) {
                 break;
             }
 
-            productContainer.innerHTML += `<div class="product-card product-featured">
+            productContainerHome.innerHTML += `<div class="product-card-home product-featured-home">
             <a href="jacket.html?id=${results[i].id}">
             <img class="product__image" src="${results[i].image}" alt="${results[i].title}">
             </a>
@@ -30,15 +30,10 @@ async function getProduct() {
 
     } catch (error) {
         console.log("error");
-        productContainer.innerHTML = displayError("A error occurred");
-     
-        //catch (error) {
-            //console.log(error);
-            //productContainer.innerHTML = message('error', error);
-        //}
+        productContainerHome.innerHTML = displayError("A error occurred");
     }
 }
 
-getProduct();
+getProductHome();
 
 });

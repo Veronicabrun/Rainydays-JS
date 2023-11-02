@@ -34,7 +34,7 @@ body {
 }
 
 .logo-header {
-    max-width: 100px;
+    max-width: 110px;
 }
 
 .figure {
@@ -47,9 +47,9 @@ body {
     align-items: center;
     margin: 5px 5px;
     padding: 5px 5px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 1em; 
-    height: 20px;
+    height: 30px;
     width: 30%;
 }
 
@@ -172,7 +172,7 @@ main {
 }
 
 span {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #bc8a5f;
 }
 
@@ -187,6 +187,18 @@ span {
 .all-news:hover {
     text-decoration: underline; 
 }
+
+.products-container-home {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    background-color: #f3f4f4;
+}
+
 
 .products-container {
 
@@ -222,7 +234,7 @@ h2 {
 
 .product__price {
     display: block;
-    color: #0A3641;
+    color: rgb(147 101 60);
     text-align: left;
     font-weight: bolder;
 }
@@ -260,7 +272,7 @@ h2 {
 .cta__categorie {
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 370px;
     background-color: #0A3641;
     color: #BF8C60;
     text-decoration: none;
@@ -272,7 +284,7 @@ h2 {
 
 /* All jackets news */
 .loading-indicator {
-   border: 16px solid #f3f3f3;
+    border: 16px solid #f3f3f3;
     border-top: 16px solid #BF8C60;
     border-radius: 50%;
     width: 120px;
@@ -296,16 +308,6 @@ background: rgba(255, 0, 0, 0.1);
     justify-content: center;
 }
 
-.product-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 30px;
-    margin-bottom: 30px;
-    background-color: #f3f4f4;  
-}
 
 .cta-large-jackets {
     background-color: #0A3641;

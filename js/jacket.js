@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const loadingIndicator = document.querySelector('.loading-indicator');
             const productDetails = document.querySelector('.product-card product-featured');
 
+
             for (let i = 0; i < 5; i++) {
                 setTimeout(() => {
                    loadingIndicator.style.display = 'none';
@@ -18,16 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const productImage = document.getElementById('product-image');
                     const productTitle = document.getElementById('product-title');
+
+                    const productGender = document.getElementById ('product-gender');
+
                     const productPrice = document.getElementById('product-price');
                     const productDescription = document.getElementById('product-description');
 
                     productImage.src = result.image;
                     productImage.alt = result.title;
                     productTitle.textContent = result.title;
+
+                    productGender.textContent = result.gender;
+
                     productPrice.textContent = result.price;
                     productDescription.textContent = result.description;
 
                 }, 1000 * i);
+
             }
         } catch (error) {
            console.log(error);
@@ -35,15 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     getProductDetails();
-
   
-
-    
     
 });
 
 
-   ///const productContainerJacket = document.querySelector('.products-container-jacket');
 
 
 
