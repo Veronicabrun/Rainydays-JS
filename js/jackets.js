@@ -18,7 +18,7 @@ async function getProduct() {
             }
 
             productContainer.innerHTML += `<div class="product-card product-featured">
-            <a href="jacket.html?id=${results[i].id}">
+            <a href="detailsJacket.html?id=${results[i].id}">
             <img class="product__image" src="${results[i].image}" alt="${results[i].title}">
             </a>
             <h2>${results[i].title}</h2>
@@ -31,7 +31,7 @@ async function getProduct() {
     } catch (error) {
         console.log("error");
         productContainer.innerHTML = displayError("A error occurred");
-     
+    
         //catch (error) {
             //console.log(error);
             //productContainer.innerHTML = message('error', error);

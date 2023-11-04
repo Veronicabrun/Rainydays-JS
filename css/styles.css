@@ -191,22 +191,6 @@ span {
 .products-container-home {
     display: flex;
     flex-direction: row;
-   
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 30px;
-    margin-bottom: 30px;
-    background-color: #f3f4f4;
-}
-
-
-.products-container {
-
-
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     gap: 30px;
     padding: 20px 30px;
@@ -294,10 +278,10 @@ h2 {
 }
 
 .error {
-border: 1px solid darkred;
-padding: 1rem;
-color: darkred;
-background: rgba(255, 0, 0, 0.1);
+    border: 1px solid darkred;
+    padding: 1rem;
+    color: darkred;
+    background: rgba(255, 0, 0, 0.1);
 }
 
 .all-jackets {
@@ -306,6 +290,17 @@ background: rgba(255, 0, 0, 0.1);
     padding-bottom: 5px;
     display: flex;
     justify-content: center;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    background-color: #f3f4f4;
 }
 
 
@@ -668,14 +663,24 @@ img {
         display: flex;
         flex-direction: column;
     }
+
+    .products-container-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media(max-width: 899px){
+@media(max-width: 899px) {
     .banner-content {
         width: 400px;
     }
 
     .products-container-jacket {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -696,9 +701,9 @@ img {
 }
 
 @media(max-width: 728px) {
-  .header-icon {
-    display: block; 
-  }
+    .header-icon {
+       display: block; 
+    }
 
 }
 
@@ -719,16 +724,26 @@ img {
         display: grid;
         grid-template-columns: 1fr;
     }
-}
 
+    .products-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .products-container-home {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
 
   @media(max-width:500px){
     .header-icons {
-      flex: 1 0 100%;   
+        flex: 1 0 100%;   
     }
 
     .header-container {
-       flex-wrap: wrap; 
+        flex-wrap: wrap; 
     }
 
     .search {
@@ -759,6 +774,6 @@ img {
     
     .product-list {
         grid-template-columns: 1fr; 
-     }
+    }
 
   }

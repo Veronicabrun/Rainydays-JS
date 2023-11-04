@@ -17,8 +17,8 @@ async function getProductHome() {
                 break;
             }
 
-            productContainerHome.innerHTML += `<div class="product-card-home product-featured-home">
-            <a href="jacket.html?id=${results[i].id}">
+            productContainerHome.innerHTML += `<div class="product-card product-featured"</div> 
+            <a href="detailsJacket.html?id=${results[i].id}">
             <img class="product__image" src="${results[i].image}" alt="${results[i].title}">
             </a>
             <h2>${results[i].title}</h2>
@@ -30,7 +30,7 @@ async function getProductHome() {
 
     } catch (error) {
         console.log("error");
-        productContainerHome.innerHTML = displayError("A error occurred");
+        productContainerHome.innerHTML = displayErr("A error occurred");
     }
 }
 
