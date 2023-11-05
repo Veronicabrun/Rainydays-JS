@@ -56,6 +56,9 @@ body {
 .header-icons a {
     text-decoration: none; 
     color: #0A3641;  
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .header-icons {
@@ -70,12 +73,7 @@ body {
 }
 
 #menu-checkbox, .hamburger-icon {
-  display: none;  
-}
-
-.fa-solid, .fas {
-    font-size: 39px;
-    color:#0A3641;
+    display: none;  
 }
 
 nav {
@@ -136,10 +134,10 @@ main {
 }
 
 .banner__image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 } 
 
 .cta__banner {
@@ -256,7 +254,7 @@ h2 {
 .cta__categorie {
     position: absolute;
     left: 50%;
-    top: 370px;
+    top: 300px;
     background-color: #0A3641;
     color: #BF8C60;
     text-decoration: none;
@@ -302,7 +300,6 @@ h2 {
     margin-bottom: 30px;
     background-color: #f3f4f4;
 }
-
 
 .cta-large-jackets {
     background-color: #0A3641;
@@ -439,8 +436,8 @@ h5 {
 }
 
 .checkout-info-item {
-  flex: 1;
-  line-height: 1.5;
+    flex: 1;
+    line-height: 1.5;
 }
 
 .checkout-info-item>* {
@@ -501,7 +498,7 @@ input, select, textarea {
 }
 
 img {
-  width: 100%
+    width: 100%
 }
 
 .contact-info-container {
@@ -559,9 +556,9 @@ img {
 
 /* About page */
 .about-us {
-   padding: 15px;
-   display: flex;
-   justify-content: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .about-image {
@@ -594,8 +591,8 @@ img {
 }
 
 .cta-item {
-   text-align: center;
- }
+    text-align: center;
+}
  
 .cta-about {
     background-color: #0A3641;
@@ -617,30 +614,30 @@ img {
     grid-auto-flow: column;
     gap: 10em;
     justify-content: center;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 1.5em;
     text-align: center;
-  }
+}
 
-  footer ul {
+footer ul {
     line-height: 1.6;
     list-style-type: none;
     color:#0A3641;
-  }
+}
 
-  .footer-about, .footer-contact {
+.footer-about, .footer-contact {
     text-decoration: none;
     color:#0A3641;
-  }
+}
  
-  .footer-about:hover, .footer-contact:hover {
+.footer-about:hover, .footer-contact:hover {
     text-decoration: underline; 
-  }
+}
 
   /* @media */
-  @media(max-width: 1000px) {
+@media(max-width: 1000px) {
     .product-featured {
         flex:1 0 48%;
     }
@@ -671,10 +668,6 @@ img {
 }
 
 @media(max-width: 899px) {
-    .banner-content {
-        width: 400px;
-    }
-
     .products-container-jacket {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -737,7 +730,7 @@ img {
 
 }
 
-  @media(max-width:500px){
+@media(max-width:500px){
     .header-icons {
         flex: 1 0 100%;   
     }
@@ -776,4 +769,4 @@ img {
         grid-template-columns: 1fr; 
     }
 
-  }
+}

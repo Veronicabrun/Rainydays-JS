@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded',() => {
-    const productContainerHome = document.querySelector('.products-container-home');
-    const loadingIndicator = document.querySelector('.loading-indicator');
+document.addEventListener("DOMContentLoaded",() => {
+    const productContainerHome = document.querySelector(".products-container-home");
+    const loadingIndicator = document.querySelector(".loading-indicator");
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
 
 async function getProductHome() {
@@ -10,7 +10,7 @@ async function getProductHome() {
 
         console.log(results);
 
-        productContainerHome.innerHTML = '';
+        productContainerHome.innerHTML = "";
 
         for (let i = 0; i < results.length; i++) {
             if (i === 5) {
@@ -26,7 +26,7 @@ async function getProductHome() {
             </div>`;
         }
 
-          loadingIndicator.style.display = 'none';
+          loadingIndicator.style.display = "none";
 
     } catch (error) {
         console.log("error");
