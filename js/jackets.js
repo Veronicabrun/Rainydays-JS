@@ -2,11 +2,14 @@ document.addEventListener('DOMContentLoaded',() => {
     const productContainer = document.querySelector('.products-container');
     const loadingIndicator = document.querySelector('.loading-indicator');
     const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
+  
 
 async function getProduct() {
     try {
         const response = await fetch(apiUrl);
         const results = await response.json();
+
+        const loadingIndicator = document.querySelector(".loading-indicator");
 
         console.log(results);
 

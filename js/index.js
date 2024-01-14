@@ -13,7 +13,7 @@ async function getProductHome() {
         productContainerHome.innerHTML = "";
 
         for (let i = 0; i < results.length; i++) {
-            if (i === 5) {
+            if (i === 4) {
                 break;
             }
 

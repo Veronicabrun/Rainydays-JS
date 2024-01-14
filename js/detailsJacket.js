@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 1000 * i);
 
             }
+
         } catch (error) {
            console.log(error);
         }
