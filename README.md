@@ -47,6 +47,10 @@ User testing was conducted to identify and implement improvements in the website
 - CSS (Flexbox and CSS Grid)
 - JavaScript (plain, no libraries or frameworks)
 
+## Link
+
+Netlify: https://grand-stardust-f81e12.netlify.app
+
 ## Contact
 vbpedersen@outlook.com
 
