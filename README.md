@@ -1,5 +1,4 @@
 # Rainydays-JS
-# Course-Assignment-Rainydays
 
 # Rainydays
 
