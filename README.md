@@ -16,7 +16,7 @@ This project is part of a course assignment to practice HTML, CSS, and JavaScrip
 
 - HTML
 - CSS
-- Javascript
+- Javascript 
   
 ## Project Overview
 
@@ -41,20 +41,14 @@ User testing was conducted to identify and implement improvements in the website
 - Implementing enhancements based on the feedback.
 - Conducting accessibility testing to ensure ease of use for all users.
 
-## Built With
-
-- HTML
-- CSS (Flexbox and CSS Grid)
-- JavaScript (plain, no libraries or frameworks)
-
 ## Link
 
 Netlify: https://grand-stardust-f81e12.netlify.app
 
 ## Contact
-vbpedersen@outlook.com
+Email: vbpedersen@outlook.com
 
-linkedin.com/in/veronica-brun-pedersen-2860bb249
+Linkedin: linkedin.com/in/veronica-brun-pedersen-2860bb249
 
 ## Getting Started
 
