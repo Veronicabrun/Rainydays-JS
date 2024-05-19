@@ -48,7 +48,7 @@ Netlify: https://grand-stardust-f81e12.netlify.app
 ## Contact
 Email: vbpedersen@outlook.com
 
-Linkedin: linkedin.com/in/veronica-brun-pedersen-2860bb249
+[LinkedIn](https://linkedin.com/in/veronica-brun-pedersen-2860bb249)
 
 ## Getting Started
 
