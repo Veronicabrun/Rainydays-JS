@@ -70,5 +70,5 @@ To get started with this project, follow these steps:
 
 ### Running
 To run the app, use the following command:
-
+ ```bash
    npm run start
