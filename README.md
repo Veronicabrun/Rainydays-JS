@@ -58,17 +58,21 @@ To get started with this project, follow these steps:
 
 1. Clone the repository by running the following command in your terminal:
    ```bash
+   
    git clone https://github.com/Veronicabrun/Rainydays-JS.git
 
 2. Once the repository is cloned, navigate to the project directory:
    ```bash
+   
    cd Rainydays-JS
    
 3. Install the dependencies:
    ```bash
+   
    npm install
 
 ### Running
 To run the app, use the following command:
  ```bash
+
    npm run start
