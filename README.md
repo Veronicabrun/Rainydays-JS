@@ -22,7 +22,8 @@ This project is part of a course assignment to practice HTML, CSS, and JavaScrip
 
 - HTML
 - CSS
-- Javascript 
+- Javascript
+- WordPress
   
 ## Project Overview
 
