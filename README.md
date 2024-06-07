@@ -5,10 +5,16 @@
 ![The website's front page. Navigation menu at the top, followed by an image with green water and mountains in the background.]( https://github.com/Veronicabrun/Rainydays-JS/blob/main/2024-05-18_14h29_29.png?raw=true)
 
 ## Description
+
 This project is part of a course assignment to practice HTML, CSS, and JavaScript skills. The project involves developing a responsive website based on a design brief, integrating dynamic content from an API, and enhancing user interaction through usability testing.
 
-- Home 
-- Shop
+## Requrements for pages
+
+- Home
+- List of jackets
+- A jacket specific page, showing product details such as description, price and an add to cart button
+- A checkout page
+- A checkout completed page
 - About
 - Contact
 
