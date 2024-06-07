@@ -50,7 +50,7 @@ User testing was conducted to identify and implement improvements in the website
 
 ## Link
 
-Netlify: https://grand-stardust-f81e12.netlify.app
+**Netlify:** https://grand-stardust-f81e12.netlify.app
 
 ## Contact
 
