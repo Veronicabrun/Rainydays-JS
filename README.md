@@ -53,9 +53,10 @@ User testing was conducted to identify and implement improvements in the website
 Netlify: https://grand-stardust-f81e12.netlify.app
 
 ## Contact
-Email: vbpedersen@outlook.com
 
-LinkedIn: [LinkedIn](https://linkedin.com/in/veronica-brun-pedersen-2860bb249)
+Feel free to reach out to me for any inquiries or collaboration opportunities:
+- **Email:** [vbpedersen@outlook.com](mailto:your-email@example.com)
+- **LinkedIn:** [LinkedIn](https://linkedin.com/in/veronica-brun-pedersen-2860bb249)
 
 ## Getting Started
 
