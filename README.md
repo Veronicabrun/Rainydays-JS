@@ -1,6 +1,6 @@
 # Rainydays-JS
 
-# Rainydays
+# Rainydays cross-course project
 
 ![The website's front page. Navigation menu at the top, followed by an image with green water and mountains in the background.]( https://github.com/Veronicabrun/Rainydays-JS/blob/main/2024-05-18_14h29_29.png?raw=true)
 
